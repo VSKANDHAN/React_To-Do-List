@@ -30,6 +30,7 @@ h1{
     background-color: rgba(255, 0, 51, 0.819);
     color: white;
     cursor: pointer;
+    padding: 10px;
 }
 
 .todo{
@@ -55,7 +56,9 @@ h1{
     width: 70%;
 }
 .todo .date{
-    color: rgb(0, 255, 102);
+    color: rgb(0, 255, 60);
+    display: block;
+
 }
 .todo ul li{
     background-color: rgba(200, 64, 92, 0.715);
@@ -77,4 +80,30 @@ i{
     padding: 10px;
     border-radius: 6px;
 
+}
+@media(max-width:768px) {
+    .form input{
+        margin: 10px 0px;
+        padding: 10px 0px;
+    }
+    .todo{
+        width: 90%;
+    }
+    .todo ul{
+        width:100%;
+        padding: 0px;
+
+    }
+    .todo .task{
+        width: 60%;
+        font-size: 16px;
+    }
+    .todo input{
+        width: 80%;
+        font-size: 16px;
+    }
+    .todo .date{
+        display: block;
+    }
+    
 }

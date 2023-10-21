@@ -41,9 +41,11 @@ function handleEdit(id){
           }}  onDoubleClick={()=>handleToggle(t.id)}>
            
            <span style={{textDecoration:t.done?'line-through':''}} className="task"> {t.text}</span> 
-            <span className="date">{t.date}</span> 
             <button onClick={()=>handleEdit(t.id)}><i class="fa-solid fa-pencil"></i></button>
-            <button onClick={()=>handleDelete(t.id)}><i class="fa-solid fa-trash"></i></button></li>
+            <button onClick={()=>handleDelete(t.id)}><i class="fa-solid fa-trash"></i></button>
+            <span className="date">{t.date}</span> 
+            
+            </li>
             <li style={
             {display:t.edit?'block':'none'}
 
